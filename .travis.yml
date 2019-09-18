@@ -15,8 +15,6 @@ before_script:
   - echo $TRAVIS_BRANCH
   - echo $TRAVIS_BUILD_NUMBER
   - echo $TRAVIS_REPO_SLUG
-  - chmod +x gradlew
-  - ./gradlew test
 
 script:
   - docker build -t ${DOCKER_REPOSITORY} .
