@@ -1,7 +1,3 @@
-# Chris Weyl <cweyl@alumni.drew.edu> 2017
-
-FROM ruby:alpine
-MAINTAINER Chris Weyl <cweyl@alumni.drew.edu>
-
-RUN gem install mdl
+FROM ruby:alpine3.11
+RUN gem install mdl -v 0.8.0
 ENTRYPOINT [ "mdl" ]
